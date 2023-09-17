@@ -15,7 +15,8 @@ export class PostComponent implements OnInit {
 title :string ='list of posts';
 message: string ="message post";
 
-       @Input() fromParent:string;
+       @Input()
+  fromParent!: string;
 
         constructor(){}
 
