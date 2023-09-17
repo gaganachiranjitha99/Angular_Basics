@@ -5,6 +5,9 @@ import { Component,OnInit,Input } from '@angular/core';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
+
+
+
 export class PostComponent implements OnInit {
 
  
@@ -12,7 +15,7 @@ export class PostComponent implements OnInit {
 title :string ='list of posts';
 message: string ="message post";
 
-       @Input fromParent:string;
+       @Input() fromParent:string;
 
         constructor(){}
 
