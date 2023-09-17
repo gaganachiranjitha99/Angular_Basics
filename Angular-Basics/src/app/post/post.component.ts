@@ -9,10 +9,12 @@ export class PostComponent implements OnInit {
 
   constructor(){}
 
+title :string ='list of posts';
+
 
   ngOnInit(): void {
 
-    
+
     
   }
 
