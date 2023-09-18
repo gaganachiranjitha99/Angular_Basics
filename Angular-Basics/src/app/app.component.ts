@@ -11,7 +11,7 @@ export class AppComponent implements AfterViewInit {
   message!: string;
 
 
-  @ViewChild(PostComponent) childComp: any;
+  @ViewChild(PostComponent) childComp: any;// to get data from child to parent
   constructor(){
 
     console.log(this.childComp);
