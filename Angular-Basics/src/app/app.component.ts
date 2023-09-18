@@ -8,9 +8,10 @@ import { PostComponent } from './post/post.component';
 export class AppComponent implements AfterViewInit {
   title = 'Angular-Basics';
   parentMessage:string='message from parent changed';
+  message!: string;
 
 
-  @ViewChild(PostComponent) childComp;
+  @ViewChild(PostComponent) childComp: any;
   constructor(){
 
     console.log(this.childComp);
