@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-postlist',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./postlist.component.css']
 })
 export class PostlistComponent {
+
+
+
+
+  constructor(){
+    
+  }
 
 }
