@@ -10,6 +10,10 @@ export class PostlistComponent implements OnInit{
 
   @Input() fromParentPost
 
+  ngOnInit(): void {
+    
+  }
+
 
 
 
