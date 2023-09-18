@@ -15,7 +15,7 @@ export class PostComponent implements OnInit {
             title :string ='list of posts';
             message: string ="message post";
             PostParentMessage:string='from paprent post';
-            childMessage:string='from child component'
+            childMessage:string='from child component';
 
            @Input()
             fromParent!: string;
