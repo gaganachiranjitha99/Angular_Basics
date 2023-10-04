@@ -1,5 +1,13 @@
 
 <p>{{message}}</p>
 <app-navbar></app-navbar>
-<app-post [fromParent]="parentMessage" (messageEvent)='receiveMessage($event)'></app-post>
+<app-post [fromParent]="parentMessage" ></app-post>
 <p>{{fromChildOutput}}</p>
+
+
+
+<img src="{{imgUrl}}">
+
+
+<!--PROPERTY BINDING -->
+<img [src]="imgUrl">
