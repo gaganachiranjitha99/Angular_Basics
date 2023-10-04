@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
     this.message=this.childComp;
 
   }
-  receiveMessage($event: any){
+  receiveMessage($event: string){
 
     this.fromChildOutput=$event;
   }
