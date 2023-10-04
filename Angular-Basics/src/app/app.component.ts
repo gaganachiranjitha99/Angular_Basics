@@ -12,6 +12,7 @@ export class AppComponent implements AfterViewInit {
   fromChildOutput!: string;
   imgUrl="https://media.licdn.com/dms/image/D5603AQHbHGpprXuzAA/profile-displayphoto-shrink_800_800/0/1692292973588?e=2147483647&v=beta&t=VZeE63--wzywe3SogI-GdFI4Obkp5jnNVl_6kJXwJV0";
   bool:boolean=true;
+  userName!: string;
 
   @ViewChild(PostComponent) childComp: any;// to get data from child to parent
   constructor(){
@@ -34,7 +35,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   onKeyup(){
-    console.log('enter key pressed');
+    console.log(this.userName);
   }
 
 }

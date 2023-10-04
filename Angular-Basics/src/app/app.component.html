@@ -22,4 +22,7 @@
 <button (click)="buttonClick()">click me</button>
 <!--event filtering-->
 
-<input type="text" (keyup.enter)="onKeyup()">
+<!--template variable-->
+<input type="text" (keyup.enter)="onKeyup(username.value) "#username>
+
+<input type="text"[(ngModel)]="userName" (keyup.enter)="onKeyup()>
