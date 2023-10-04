@@ -28,4 +28,8 @@ export class AppComponent implements AfterViewInit {
 
     this.fromChildOutput=$event;
   }
+
+  buttonClick(){
+    console.log('button click event works')
+  }
 }
