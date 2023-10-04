@@ -32,7 +32,7 @@ export class PostComponent implements OnInit {
   }
   sendMessage(){
 
-    console.log('clicked');
+    this.messageEvent.emit(this.outputChildMessage);
   }
 
 }

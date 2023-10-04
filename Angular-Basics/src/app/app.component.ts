@@ -9,7 +9,12 @@ export class AppComponent  {
   
 
  
-  constructor(){}
+  postTile: any;
+  postDetails: any;
+  imageURL:any;
+  postURL:any;
+  addBackground!: boolean;
+  
 
     
   
