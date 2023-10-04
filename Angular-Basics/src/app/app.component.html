@@ -1,25 +1,10 @@
+<div class="form-area">
 
-<p>{{message}}</p>
-<app-navbar></app-navbar>
-<app-post [fromParent]="parentMessage" ></app-post>
-<p>{{fromChildOutput}}</p>
+<h1>Post form</h1><br><br>
+<input type="text" placeholder="post Title"><br><br>
+<textarea cols="30" rows="10" placeholder="post details"></textarea><br><br>
+<input type="text" placeholder="post image url"><br><br>
+<input type="text" placeholder="post URL"><br><br>
+<input type="checkbox">Add backgroud
 
-
-<!--String interpolletion-->
-<img src="{{imgUrl}}">
-
-
-<!--PROPERTY BINDING -->
-<img [src]="imgUrl">
-
-<!--class binding-->
-<h1 [class.text-red]="bool">Gagana Chiranjitha</h1>
-
-<!--style binding-->
-<h1 [style.color]="bool?'red':''">style binding</h1>
-
-<!--event binder-->
-<button (click)="buttonClick()">click me</button>
-<!--event filtering-->
-
-<!--template variable-->
+</div>
