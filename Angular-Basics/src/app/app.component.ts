@@ -32,4 +32,9 @@ export class AppComponent implements AfterViewInit {
   buttonClick(){
     console.log('button click event works')
   }
+
+  onKeyup(){
+    console.log('keyyuup event working');
+  }
+
 }
