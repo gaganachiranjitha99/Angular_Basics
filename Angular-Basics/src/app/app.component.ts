@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   onKeyup(){
-    console.log('keyyuup event working');
+    console.log('enter key pressed');
   }
 
 }
