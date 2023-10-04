@@ -9,7 +9,7 @@ export class AppComponent implements AfterViewInit {
   title = 'Angular-Basics';
   parentMessage:string='message from parent changed';
   message!: string;
-
+  fromChildOutput!: string;
 
   @ViewChild(PostComponent) childComp: any;// to get data from child to parent
   constructor(){
@@ -21,5 +21,9 @@ export class AppComponent implements AfterViewInit {
     console.log(this.childComp);
     this.message=this.childComp;
 
+  }
+  receiveMessage($event: any){
+
+    this.fromChildOutput=$event;
   }
 }
