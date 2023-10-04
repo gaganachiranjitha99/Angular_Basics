@@ -1,4 +1,4 @@
-import { Component,OnInit,Input } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -16,9 +16,12 @@ export class PostComponent implements OnInit {
             message: string ="message post";
             PostParentMessage:string='from paprent post';
             childMessage:string='from child component';
-
+            outputChildMessage :String ="from child component via output";
            @Input()
             fromParent!: string;
+
+
+          @Output()messageEvent=new EventEmitter<String>();
 
         constructor(){}
 
@@ -26,6 +29,10 @@ export class PostComponent implements OnInit {
 
 
     
+  }
+  sendMessage(){
+
+    console.log('clicked');
   }
 
 }
